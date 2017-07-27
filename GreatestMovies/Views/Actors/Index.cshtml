@@ -10,29 +10,31 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 
-    <div class="row">
-        @foreach (var item in Model)
-        {
-            <div class="col-md-4 colBorder">
-                <h1 class="actor-name">
-                    @Html.DisplayFor(modelItem => item.ActorName)
-                </h1>
-                <h4>
-                    This actor was born on: @Html.DisplayFor(modelItem => item.DOB)
-                </h4>
-                <h4>
-                    Actor's nationality is: @Html.DisplayFor(modelItem => item.Nationality)
-                </h4>
-                <h6>
-                    Gender: @Html.DisplayFor(modelItem => item.Gender)
-                </h6>
-                <p>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.ActorID }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.ActorID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.ActorID })
-                </p>
-            </div>
-        }
+<div class="row">
+@foreach (var item in Model)
+{
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <h3 class="actor-name">
+                @Html.DisplayFor(modelItem => item.ActorName)
+            </h3>
+            <h4>
+                This actor was born on: @Html.DisplayFor(modelItem => item.DOB)
+            </h4>
+            <h4>
+                Actor's nationality is: @Html.DisplayFor(modelItem => item.Nationality)
+            </h4>
+            <h6>
+                Gender: @Html.DisplayFor(modelItem => item.Gender)
+            </h6>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ActorID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ActorID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ActorID })
+            </p>
+        </div>
+    </div>
+}
         </div>
 
 

@@ -35,7 +35,7 @@ textarea {
 .row {
     text-align:center;
     padding-top:10px;
-    color:white;
+    color:black;
     
 }
 .create-new.btn.btn-primary a {
@@ -43,4 +43,7 @@ textarea {
 }
 h2.page-title {
     color:white;
+}
+.thumbnail {
+   margin-bottom:10px; 
 }
