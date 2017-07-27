@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('movie-film-video-production-ss-1920-800x450.jpg');
+    background-size:cover;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +23,24 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.colBorder {
+    border: 2px solid white;
+    
+}
+.actor-name {
+    font-family: 'Merriweather', serif;
+}
+.row {
+    text-align:center;
+    padding-top:10px;
+    color:white;
+    
+}
+.create-new.btn.btn-primary a {
+   color:white;
+}
+h2.page-title {
+    color:white;
 }
